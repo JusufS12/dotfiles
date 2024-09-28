@@ -86,4 +86,5 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev
 
 # Adding modules
 source ~/zsh/shell/aliases.sh
+source ~/zsh/shell/prompt.sh
 source ~/zsh/shell/start.sh

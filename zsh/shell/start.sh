@@ -1,4 +1,2 @@
-# Use starship prompt
-# eval "$(starship init zsh)"
-
+clear
 pfetch
