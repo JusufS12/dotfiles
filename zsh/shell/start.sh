@@ -1,2 +1,2 @@
-clear
-pfetch
+# clear
+# pfetch
