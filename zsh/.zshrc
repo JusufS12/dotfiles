@@ -14,6 +14,11 @@ source "${ZINIT_HOME}/zinit.zsh"
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
+# zinit light Aloxaf/fzf-tab
+
+
+# Add snippets
+zinit snippet OMZP::command-not-found
 
 
 # Opts
@@ -49,10 +54,12 @@ bindkey '^j' history-search-forward
 
 # Basic auto/tab complete
 autoload -U compinit && compinit
+zinit cdreplay -q
 zstyle ':completion:*' menu select
+# zstyle ':completion:*' menu no
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
-# zmodload zsh/complist
+# zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 _comp_options+=(globdots)		# Include hidden files.
 bindkey '^f' autosuggest-accept
 
