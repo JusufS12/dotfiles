@@ -10,3 +10,4 @@ size = 10.75
 [window]
 decorations = "Full"
 padding = { x = 8, y = 6 }
+dimensions = { columns = 99, lines = 28 }

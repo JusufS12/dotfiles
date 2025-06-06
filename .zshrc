@@ -68,3 +68,4 @@ bindkey '^f' autosuggest-accept
 source ~/zsh/shell/aliases.sh
 source ~/zsh/shell/prompt.sh
 source ~/zsh/shell/start.sh
+source ~/zsh/shell/newline.sh
